@@ -1,6 +1,7 @@
 ﻿using EfHater;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace GamePlatform.Api
 {
@@ -17,8 +18,12 @@ namespace GamePlatform.Api
 
         private static IServiceCollection AddEntityFramework(this IServiceCollection services, IConfiguration configuration)
         {
+            string assName = typeof(GameContext).Assembly.GetName().Name;
+
+            var gg = configuration.GetConnectionString("GameDatabase");
+
             services.AddDbContext<GameContext>(options =>
-                 options.UseSqlServer(configuration.GetConnectionString("GameDatabase")));
+                 options.UseSqlServer(gg, maafaka => maafaka.MigrationsAssembly(assName)));
 
             return services;
         }
