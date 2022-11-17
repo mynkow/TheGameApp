@@ -1,0 +1,18 @@
+{
+    "profiles": {
+
+        "IIS": {
+            "commandName": "IIS",
+            "launchUrl": "https://game.local.com"
+        }
+    },
+    "$schema": "https://json.schemastore.org/launchsettings.json",
+    "iisSettings": {
+        "windowsAuthentication": false,
+        "anonymousAuthentication": true,
+        "iis": {
+            "applicationUrl": "https://game.local.com",
+            "sslPort": 0
+        }
+    }
+}
