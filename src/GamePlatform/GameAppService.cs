@@ -2,16 +2,18 @@
 {
     public class GameAppService
     {
-        public void CreateGame(string name)
+        public Guid CreateGame(string name)
         {
             var game = new Game(name);
+
+            return Guid.NewGuid();
             // save db
         }
 
         public void SetPrice(Guid gameId, Money gamePrice)
         {
             // load db byId(gameId)
-            Game game = default;
+            Game game = new Game("alabala");
             game.SetPrice(gamePrice);
             // save db
         }
