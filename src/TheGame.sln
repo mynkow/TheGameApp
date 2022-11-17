@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamePlatform", "GamePlatfor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamePlatform.Api", "GamePlatform.Api\GamePlatform.Api.csproj", "{FA8500FC-0636-4BA6-9C06-B07ED8C4D5DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfHater", "EfHater\EfHater.csproj", "{766B7199-B5A4-4D2A-8278-2F098B62679C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FA8500FC-0636-4BA6-9C06-B07ED8C4D5DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA8500FC-0636-4BA6-9C06-B07ED8C4D5DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA8500FC-0636-4BA6-9C06-B07ED8C4D5DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{766B7199-B5A4-4D2A-8278-2F098B62679C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{766B7199-B5A4-4D2A-8278-2F098B62679C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{766B7199-B5A4-4D2A-8278-2F098B62679C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766B7199-B5A4-4D2A-8278-2F098B62679C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

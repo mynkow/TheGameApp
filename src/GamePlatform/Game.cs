@@ -2,9 +2,15 @@
 {
     public class Game
     {
+        private Guid id;
         private readonly string name;
 
         private Money price;
+
+        Game()
+        {
+
+        }
 
         public Game(string name)
         {
